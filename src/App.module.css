@@ -1,0 +1,121 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    margin-top: 1rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-icon {
+    color: white;
+    margin: 1rem;
+    display: none;
+}
+
+.menu-icon.Mui-selected {
+    display: none;
+}
+
+.menu-item .link {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.menu-item {
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+
+.link:hover {
+    color: var(--complementry)
+}
+
+.menu-item .activeLink {
+    color: white;
+}
+
+.activeLink {
+    background-color: var(--complementry);
+    color: var(--backround);
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(0rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.header img {
+    width: 18%;
+}
+
+.header img:nth-of-type(1) {
+    width: 20%;
+}
+
+.header h1{
+    font-size: clamp(1.5rem, 4vw,2em);
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-corner {
+    background-color: var(--b-500);
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--complementry);
+}
+
+.menu-btn {
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 2rem;
+        left: -20rem;
+        transition: left 0.5s ease-in-out;
+        background: var(--background);
+        padding-top: 1rem;
+    }
+    .menu-item {
+        padding-block: 1rem;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .open-menu {
+        left: 0;
+        transition: left 0.5s ease-in-out;
+    }
+}

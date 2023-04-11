@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.statCard {
+    display: flex;
+    margin-top: 1rem;
+    padding: 2rem 4rem;
+    background-color: var(--b-300);
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.statCard h2{
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+.statCard h3 {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+}
+
+.cards {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.playerStat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    background-color: var(--b-500);
+    padding: 0 1rem 1rem 1rem;
+}
+
+.playerNameL, .playerNameR {
+    color: var(--accent-p);
+    padding: 0.2rem 1rem;
+    font-weight: 400;
+}
+
+.playerNameR {
+    color: var(--accent-s-500);
+    padding: 0.2rem 1rem;
+}
+
+.scores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.scoreCateg{
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.scorePlateL, .scorePlateR {
+    padding: clamp(0.5rem, 3vw, 1.5rem);
+}
+
+.scorePlateL h1, .scorePlateR h1 {
+    font-size: clamp(1rem, 3vw, 2.5rem);
+}
+.scorePlateL div, .scorePlateR div {
+    font-size: clamp(0.5rem, 3vw, 1rem);
+}
+
+.scorePlateL:nth-of-type(5){
+    background-color: var(--accent-p-500);
+}
+
+.scorePlateL:nth-of-type(4){
+    background-color: var(--accent-p-400);
+}
+
+.scorePlateL:nth-of-type(3){
+    background-color: var(--accent-p-300);
+}
+
+.scorePlateL:nth-of-type(2){
+    background-color: var(--accent-p-200);
+}
+
+.scorePlateL:nth-of-type(1){
+    background-color: var(--accent-p);
+}
+
+.scorePlateR:nth-of-type(5){
+    background-color: var(--accent-s-500);
+}
+
+.scorePlateR:nth-of-type(4){
+    background-color: var(--accent-s-400);
+}
+
+.scorePlateR:nth-of-type(3){
+    background-color: var(--accent-s-300);
+}
+
+.scorePlateR:nth-of-type(2){
+    background-color: var(--accent-s-200);
+}
+
+.scorePlateR:nth-of-type(1){
+    background-color: var(--accent-s);
+}
+
+@media screen and (max-width: 1200px) {
+    .cards {
+        flex-direction: column;
+    }
+}

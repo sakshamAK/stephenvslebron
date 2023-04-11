@@ -1,0 +1,12 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.all-time-stats {
+    color: var(--complementry);
+}
