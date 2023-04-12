@@ -29,6 +29,16 @@ export const honours = [
         scoreLebron: 2,
         scoreStephen: 4
     },
+    {
+        title: "Scoring Leader",
+        scoreLebron: 2,
+        scoreStephen: 4
+    },
+    {
+        title: "Scoring Leader",
+        scoreLebron: 2,
+        scoreStephen: 4
+    },
 ]
 
 
